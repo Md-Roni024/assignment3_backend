@@ -30,12 +30,12 @@ Before running the application, make sure you have the following installed:
 
 1. Clone the project
     ```bash
-    git clone https://github.com/Md-Roni024/Full_Stack-_Assignment
+    git clone https://github.com/Md-Roni024/assignment3_backend
     ```  
 
 2. Go to the project directory and install dependencies
     ```
-    cd backend
+    cd assignment3_frontend
     npm install
     ```
 3. Create a .env file then add your variables credentials as like:
@@ -117,6 +117,72 @@ In the backend for managing hotel details and room information I build 5 endpoin
   );
   ```
 
+
+  ### Demo Input Data:
+  - For hote_details table
+
+  ```
+  slug: crowne-plaza-dhaka
+
+  title: Crowne Plaza Dhaka Gulshan, an IHG Hotel
+
+  description: Crowne Plaza Dhaka Gulshan, an IHG Hotel features a fitness centre, a shared lounge and a sun terrace with swimming pool and buffet breakfast in Dhaka. This 5-star hotel offers a concierge service and luggage storage space. The accommodation provides a 24-hour front desk, airport transfers, room service and free WiFi throughout the property. At the hotel you will find a restaurant serving Seafood, Steakhouse and Asian cuisine. Vegetarian and halal options can also be requested. Popular points of interest near Crowne Plaza Dhaka Gulshan, an IHG Hotel include Consulate of Singapore, Primeasia University and Southeast University. The nearest airport is Hazrat Shahjalal International Airport, 5 km from the accommodation.
+  
+  images: [
+    "https://lh3.googleusercontent.com/d/1L16eZ9LeY28ospfnPAFcKJjxBqHT61Mw=s220?authuser=0",
+    "https://lh3.googleusercontent.com/d/1Njbw-kLtbMxY-C4ps9McEooVfsja2gpG=s220?authuser=0",
+    "https://lh3.googleusercontent.com/d/1cCUQ1vuTmpSPIHWecpZp6mu436Tomf-u=s220?authuser=0",
+    "https://lh3.googleusercontent.com/d/1Suxip5CEq1piA9pokrjd-cbxHc3bPSd3=s220?authuser=0",
+    "https://lh3.googleusercontent.com/d/1t68vPuxypOF9TS_n_WgVHZx2g-FHjdma=s220?authuser=0"
+  ]
+
+  guest_count: 6
+
+  bedroom_count: 3
+
+  bathroom_count: 2,
+
+  amenities: [
+    "Free WiFi",
+    "Airport shuttle",
+    "Swimming pool",
+    "Free parking",
+    "Fitness centre",
+    "24-hour front desk"
+  ]
+
+  host_name: Roni
+
+  host_image: https://lh3.googleusercontent.com/d/1LYSAeKPBLeBp1_RR5KUlmiXu5i-8Vujk=s220?authuser=0
+
+  host_email: roni.cse024@gmail.com
+
+  host_phone: 01518904071
+
+  address: Banani,Dhaka,Bangladesh
+
+  latitude: 40.38549000
+
+  longitude": 86.56310000
+
+  ```
+  
+  - For Room Information table:
+  ```
+    room_title: premium king-room
+
+    room_image: https://lh3.googleusercontent.com/     d1M1M8K_JZCcB9aRVf9V49UKoxjqNd19Kw=s220?authuser=0
+    
+    bedroom_count: 1
+
+    description: Room size 36 m². Comfy beds, 8.9 – Based on 58 reviews
+
+    guest_count: 2
+
+    bath_count: 1
+
+    price: 22499
+  ```
 
 ### Future Improvements
   - Add more functionality:
