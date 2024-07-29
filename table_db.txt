@@ -1,0 +1,38 @@
+CREATE TABLE room_information (
+    id SERIAL PRIMARY KEY,
+    hotel_slug VARCHAR(255) REFERENCES hotel_details(slug),
+    room_slug VARCHAR(255) NOT NULL,
+    room_title VARCHAR(255) NOT NULL,
+    room_image TEXT,
+    description TEXT,
+    bedroom_count INTEGER,
+    bath_count INTEGER,
+    price INTEGER,
+    guest_count INTEGER,
+    UNIQUE (hotel_slug, room_slug)
+);
+
+
+CREATE TABLE hotel_details(
+    id SERIAL PRIMARY KEY,
+    slug VARCHAR(255) UNIQUE NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    images TEXT[], -- Array of image URLs
+    guest_count INTEGER,
+    bedroom_count INTEGER,
+    bathroom_count INTEGER,
+    amenities TEXT[], -- Array of amenity names
+    host_name VARCHAR(255),
+    host_image TEXT,
+    host_email VARCHAR(255),
+    host_phone VARCHAR(20),
+    address TEXT,
+    latitude DECIMAL(10, 8),
+    longitude DECIMAL(11, 8)
+);
+
+
+
+
+
