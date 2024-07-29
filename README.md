@@ -58,11 +58,25 @@ Before running the application, make sure you have the following installed:
 ### REST API
 In the backend for managing hotel details and room information I build 5 endpoints. Where 3 endpoints for get and post hotel details, similarly rest 2 endpoins are for get and post room information.
 
-- POST /hotel
-- GET /hotel/:slug
-- GET /hotel
-- POST /hotel/create-room
-- GET /hotel/:slug/rooms
+- <h3>Create a new hotel</h2>
+  Method: POST
+
+  URL: /hotel/
+
+- <h3>Get a hotel by slug</h2>
+  Method: GET
+
+  URL: /hotel/:slug
+
+- <h3>Create a new room</h2>
+  Method: POST
+
+  URL: /hotel/rooms
+
+- <h3>Get all rooms under a hotel by hotel slug</h2>
+  Method: GET
+
+  URL: /hotel/:slug/rooms
 
 
 #### TEST API by Following Endpoints:
