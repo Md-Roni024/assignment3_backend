@@ -67,6 +67,8 @@ In the backend for managing hotel details and room information I build 5 endpoin
   Method: GET
 
   URL: /hotel/:slug
+  
+  Example:  http://localhost:3000/hotel/crowne-plaza-dhaka
 
 - <h3>Create a new room</h2>
   Method: POST
@@ -78,17 +80,8 @@ In the backend for managing hotel details and room information I build 5 endpoin
 
   URL: /hotel/:slug/rooms
 
-
-#### TEST API by Following Endpoints:
-
-```
-  1. Get Hotel Details by Hotel Slug:
-  http://localhost:3000/hotel/crowne-plaza-dhaka
-
-  2.Get room information of specific hotel by Hotel Slug
-  http://localhost:3000/hotel/crowne-plaza-dhaka/rooms
-```
-
+  Example: http://localhost:3000/hotel/crowne-plaza-dhaka/rooms
+  
 
 ### Design Database Schema
 - Database Name: <span style="color:red;font-size:15px;font-weight:bold">hotel_db</span>
