@@ -22,21 +22,6 @@ const createRoom = async (req, res) => {
 }
 
 
-// const getRoomByHotelSlug = async (req, res) => {
-//     const { hotelSlug } = req.params;
-//     try {
-//       const result = await pool.query(
-//         'SELECT room_title, room_image, description, bedroom_count, bath_count, price, guest_count FROM room_information WHERE hotel_slug = $1',
-//         [hotelSlug]
-//       );
-//       res.json(result.rows);
-//     } catch (error) {
-//       console.error('Error fetching room data:', error);
-//       res.status(500).json({ error: 'Internal server error' });
-//     }
-// };
-
-
 const getRoomByHotelSlug = async (req, res) => {
     console.log('Fetch Room information by Hotel slug...');
     const { hotelSlug } = req.params;
